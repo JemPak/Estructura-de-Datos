@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package puerto;
 
 
@@ -124,17 +120,7 @@ public class pila {
         }
         return porMover;
     }
-    /**
-     * Elimina la pila
-     */
-    public void eliminar(){
-        // Elimina el valor y la referencia a los demas contenedors.
-        inicio = null;
-        // Reinicia el contador a 0.
-        tamanio = 0;
-    }
 
-  
     public ArrayList<Integer> getContenedores(){
         ArrayList<Integer> contenedores = new ArrayList<>();
         
@@ -147,7 +133,7 @@ public class pila {
             contenedores.add(0, aux.getSerial());                
             aux = aux.getSiguiente();
         }
-        contenedores.add(0, aux.getSerial());                
+//        contenedores.add(0, aux.getSerial());                
         return contenedores;
     }
     
